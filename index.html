@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra cứu Điểm Thi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Tra cứu Điểm Thi</h1>
+    <div class="year-switch">
+        <label for="yearSwitch">Chọn năm:</label>
+        <select id="yearSwitch">
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+        </select>
+    </div>
+    <form id="searchForm">
+        <label for="sbd">Nhập SBD:</label>
+        <input type="text" id="sbd" name="sbd" required>
+        <button type="submit">Tra cứu</button>
+    </form>
+    <div id="loadingIndicator" class="loading-indicator">
+        <div class="loading-spinner"></div>
+        <p>Đang tải...</p>
+    </div>
+    <div id="resultContainer" class="result-container"></div>
+    <div id="comparisonContainer" class="comparison-container"></div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
